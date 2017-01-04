@@ -81,13 +81,12 @@ Si la demande a été correctement formatée, le serveur répond avec un payload
 
 Exemple de réponse :
 
-`
-HTTP/1.1 200 OK
-Status: 200 OK
-Content-Type: application/json; charset=utf-8
-...
-{‘’status’’: 200 ,’’token_type’’: ‘’bearer’’ , ‘’access_token’’: ‘’AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2FAAAAAAAAAAAA’’}
-`
+
+    HTTP/1.1 200 OK
+    Status: 200 OK
+    Content-Type: application/json; charset=utf-8
+    ...
+    {‘’status’’: 200 ,’’token_type’’: ‘’bearer’’ , ‘’access_token’’: ‘’AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2FAAAAAAAAAAAA’’}
 
 Les demandes doivent vérifier que la valeur associée à la clé token_type de l'objet retourné est « **bearer** ». La valeur associée à la clé access_token est le jeton.
 
@@ -100,11 +99,8 @@ Le jeton est utilisé pour faire des appels vers l’API. Pour utiliser le jeton
 Exemple de demande : 
 
 > GET /v1.0/service/limit_stat HTTP/1.1
-> 
 > Host: api.tanaguru.com
-> 
 > User-Agent: My App v1.0
-> 
 > Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2FAAAAAAAAAAAAAAA
 
 ## CRÉDITS
