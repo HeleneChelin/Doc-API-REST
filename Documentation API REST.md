@@ -157,3 +157,8 @@ Tous les codes >= 400 indiquent que la requête n'a pas été traitée avec succ
 
 **Paramètres**
 
+Nom | Requis | Type | Valeur par défaut | Description | Valeur possible
+Authorization | Oui | String | Aucune | Jeton d'authentification utilisé | bearer <valeur de jeton>
+page_url | Oui | String | Aucune | URL de la page à auditer | http://www. …..
+referentiel | Non | String | RGAA30 | Le référentiel d’accessibilité à utiliser | RGAA32016, RGAA30, RGAA22, AW22
+level | Non | String | AA | Le niveau d’accessibilité à utiliser | A, AA, AAA, Bz, Or, Ar, LEVEL_1, LEVEL_2, LEVEL_3
