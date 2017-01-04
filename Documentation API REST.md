@@ -543,3 +543,8 @@ Pour connaître les statistiques d’utilisation de l’API avec votre compte
 9. La réponse contient des informations d’utilisation de l’api.  
 
 ![Capture d'écran d'une requette, étape ci-dessus](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture05.png)
+
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
