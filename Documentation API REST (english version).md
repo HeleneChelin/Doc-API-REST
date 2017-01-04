@@ -28,7 +28,7 @@ and your Beta Password is : **10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c
 
 **Note**: The authentication informations mentioned is not only for beta version, this is a sample. Contact team Tanaguru to have a valid client ID and PIN (contact@tanaguru.com) 
 
-1. Enter the url for authentication: **https://api.tanaguru.com/v1.0/service/security/authenticate ** 
+1. Enter the url for authentication: **https://api.tanaguru.com/v1.0/service/security/authenticate** 
 2. Choose the request method POST  
 3. Go to the tab **Headers form** 
 4. Add the parameter **Authorization** 
@@ -53,7 +53,7 @@ You will get the following answer:
 
 After using the token, if you want disable it for any reason,
 
-1. Enter the url authentication: **https://api.tanaguru.com/v1.0/service/security/invalidate_token ** 
+1. Enter the url authentication: **https://api.tanaguru.com/v1.0/service/security/invalidate_token** 
 2. Make a **POST** request, 
 3. Go to the tab **Headers form** 
 4. Add the parameter **Authorization**, 
@@ -70,15 +70,15 @@ After using the token, if you want disable it for any reason,
 
 To launch an audit on the site http://www.oceaneconsulting.com with all languages,
 
-1. Enter the url authentication: **https://api.tanaguru.com/v1.0/service/auditPage **
+1. Enter the url authentication: **https://api.tanaguru.com/v1.0/service/auditPage**
 2. Make a **POST** request, 
 3. Choose **application/json** as data type to send. 
 4. Go to tab **Headers form** 
 5. Add the parameter **Authorization**
-6. Use the Token type **bearer** with your token as : **bearer eyJH... **
+6. Use the Token type **bearer** with your token as : **bearer eyJH...**
 7. Add the parameter **Accept** and give it the value */*
 8. Add the parameter **Content-type** and give it the value **application/json**
-9. Got to tab **Raw payload **
+9. Got to tab **Raw payload**
 10. Enter at the Json format {**"page_url" : "http://www.oceaneconsulting.com"}**, add the **language, referentiel** et **level** attributes is not required because they have a default value (All, Rgaa30, AA). 
 11. Click send to apply.	
 
@@ -88,11 +88,11 @@ To launch an audit on the site http://www.oceaneconsulting.com with all language
 
 To see API usage statistics with your account 
 
-1-	Enter the url authentication: **https://api.tanaguru.com/v1.0/service/limit_stat **
+1-	Enter the url authentication: **https://api.tanaguru.com/v1.0/service/limit_stat**
 2-	Make a **GET** request
-3-	Go to tab **Headers form **
+3-	Go to tab **Headers form**
 4-	Add the parameter **Authorization**
-5-	Use the Token type **bearer** with your token as : **bearer eyJH... **
+5-	Use the Token type **bearer** with your token as : **bearer eyJH...**
 6-	Add the parameter **Accept** and give it the value */*
 7-	Add the parameter **Content-type** and give it the value **application/json**
 8-	Click send to apply.	
