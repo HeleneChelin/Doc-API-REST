@@ -101,8 +101,11 @@ Exemple de demande :
 
 `
 GET /v1.0/service/limit_stat HTTP/1.1
+
 Host: api.tanaguru.com
+
 User-Agent: My App v1.0
+
 Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2FAAAAAAAAAAAAAAA
 `
 
