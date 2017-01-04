@@ -38,11 +38,11 @@ and your Beta Password is : **10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c
 8. Add the **Content-type** parameter and give it the value **application/json**
 9. After entering all these informations, click send to apply.
 
-[Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture01.png)
+![Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture01.png)
 
 You will get the following answer:
 
-[Request answer screenshot, step below](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture01.png)
+![Request answer screenshot, step below](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture01.png)
 
 1. The answer contain informations about the answer **statut** and the **token** type 
 2. The token value that you will use to make audit requests. 
@@ -64,7 +64,7 @@ After using the token, if you want disable it for any reason,
 9. Add the **access_token** parameter and enter the token that you want invalidate. 
 10. Click send to apply.
 
-[Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture03.png)
+![Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture03.png)
 
 ### LAUNCH A PAGE AUDIT
 
@@ -82,7 +82,7 @@ To launch an audit on the site http://www.oceaneconsulting.com with all language
 10. Enter at the Json format {**"page_url" : "http://www.oceaneconsulting.com"}**, add the **language, referentiel** et **level** attributes is not required because they have a default value (All, Rgaa30, AA). 
 11. Click send to apply.	
 
-[Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture04.png)
+![Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture04.png)
 
 ### API USE STATISTICS 
 
@@ -98,4 +98,4 @@ To see API usage statistics with your account
 8-	Click send to apply.	
 9-	The answer contain the API usage informations.  
 
-[Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture05.png)
+![Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture05.png)
