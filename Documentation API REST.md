@@ -172,6 +172,7 @@ Tous les codes >= 400 indiquent que la requête n'a pas été traitée avec succ
 **Paramètres**
 
 **Nom**			| **Requis**| **Type** 	| **Valeur par défaut**	| **Description**																| **Valeur possible**
+----------------|-----------|-----------|-----------------------|-------------------------------------------------------------------------------|----------------------
 Authorization	| Oui 		| String	| Aucune 				| Jeton d'authentification utilisé 												| bearer <valeur de jeton>
 page_url 		| Oui 		| String	| Aucune 				| URL de la page à auditer 														| http://www. …..
 referentiel 	| Non 		| String	| RGAA30 				| Le référentiel d’accessibilité à utiliser										| RGAA32016, RGAA30, RGAA22, AW22
@@ -269,7 +270,8 @@ html_tags		| Non 		| Boolean	| False					| Pour fournir les remarques et les int
 
 **Objet**
 
-Nom							| Type		| Description 
+**Nom**						| **Type**	| **Description** 
+----------------------------|-----------|-------------------
 http_status_code			| Number	| Code retour du statut de la requête
 url							| String	| URL auditée 
 status						| String	| Status de l’audit 
@@ -342,7 +344,8 @@ snippet						| String	| Le bout de code HTML concerné par la remarque
 
 **Objet**
 
-Nom					| Type		| Description 
+**Nom**				| **Type**	| **Description** 
+--------------------|-----------|-------------------
 status				| Number	| Code retour du statut de la requête
 quotas_limit		| Number	| Limitation de quotas (nombre d’appels autorisé)
 quotas_used			| Number	| Nombre d’appels effectué avec sucée
@@ -384,7 +387,8 @@ number_call_error	| Number	| Nombre d’appels retourné avec une erreur
 
 **Objet**
 
-Nom			| Type		| Description 
+**Nom**		| **Type**	| **Description** 
+------------|-----------|-------------------
 status		| Number	| Code retour du statut de la requête
 token_type	| String	| Type de jeton
 access_token| String	| Jeton d’authentification 
@@ -407,9 +411,10 @@ access_token| String	| Jeton d’authentification
 
 **Paramètres**
 
-Nom				| Requis	| Type		| Valeur par défaut	| Description							| Valeur possible
-Authorization	| Oui		| String	| Aucune			| Informations d'authentification		| basic <concaténation des clés et code secret de client encodé en Base64>
-access_token	| Oui 		| String	| Aucune			| Jeton d’authentification à invalider	| Valeur de jeton
+**Nom**			| **Requis**| **Type**	| **Valeur par défaut**	| **Description**						| **Valeur possible**
+----------------|-----------|-----------|-----------------------|---------------------------------------|-------------------
+Authorization	| Oui		| String	| Aucune				| Informations d'authentification		| basic <concaténation des clés et code secret de client encodé en Base64>
+access_token	| Oui 		| String	| Aucune				| Jeton d’authentification à invalider	| Valeur de jeton
 
 **Format de la réponse**
 
@@ -420,7 +425,8 @@ access_token	| Oui 		| String	| Aucune			| Jeton d’authentification à invalid
 
 **Objet**
 
-Nom				| Type		| Description 
+**Nom**			| **Type**	| **Description**
+----------------|-----------|-------------------
 status			| Number	| Code retour du statut de la requête
 access_token	| String	| Jeton d’authentification qui a été invalidé 
 
