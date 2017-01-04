@@ -66,6 +66,7 @@ Etapes pour encoder l’ID Client et le code secret du client dans un ensemble d
 Vous trouverez ci-dessous des exemples de valeurs indiquant le résultat de cet algorithme. Notez que le code secret de client utilisé pour ces exemples est désactivé et ne fonctionnera pas pour les demandes réelles. 
 
 Clé | b9025c56b2425053dc069585390ab7c8
+----|---------------------------------
 Code secret | 10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c7eb73d21067695
 Concaténation | b9025c56b2425053dc069585390ab7c8 : 10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c7eb73d21067695
 Porteur d’informations d’authentification (Base64) | YjkwMjVjNTZiMjQyNTA1M2RjMDY5NTg1MzkwYWI3Yzg6MTBlZThjZjk2ZjllMzVmNzIwN2E5YTVjYjNmODllZDYzYzVmNTk2OTJlMTc4MmQ4MmM3ZWI3M2QyMTA2NzY5NQ==
