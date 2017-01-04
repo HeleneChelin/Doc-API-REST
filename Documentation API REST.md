@@ -52,10 +52,10 @@ Etapes pour encoder l’ID Client et le code secret du client dans un ensemble d
 
 Vous trouverez ci-dessous des exemples de valeurs indiquant le résultat de cet algorithme. Notez que le code secret de client utilisé pour ces exemples est désactivé et ne fonctionnera pas pour les demandes réelles. 
 
-| Clé | b9025c56b2425053dc069585390ab7c8 | 
-| Code secret | 10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c7eb73d21067695 | 
-| Concaténation | b9025c56b2425053dc069585390ab7c8 : 10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c7eb73d21067695 | 
-| Porteur d’informations d’authentification (Base64) | YjkwMjVjNTZiMjQyNTA1M2RjMDY5NTg1MzkwYWI3Yzg6MTBlZThjZjk2ZjllMzVmNzIwN2E5YTVjYjNmODllZDYzYzVmNTk2OTJlMTc4MmQ4MmM3ZWI3M2QyMTA2NzY5NQ== | 
+| Clé | b9025c56b2425053dc069585390ab7c8 |
+| Code secret | 10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c7eb73d21067695 |
+| Concaténation | b9025c56b2425053dc069585390ab7c8 : 10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c7eb73d21067695 |
+| Porteur d’informations d’authentification (Base64) | YjkwMjVjNTZiMjQyNTA1M2RjMDY5NTg1MzkwYWI3Yzg6MTBlZThjZjk2ZjllMzVmNzIwN2E5YTVjYjNmODllZDYzYzVmNTk2OTJlMTc4MmQ4MmM3ZWI3M2QyMTA2NzY5NQ== |
 
 ### ÉTAPE 2 : OBTENIR UN JETON
 
@@ -68,14 +68,12 @@ La valeur calculée à l'étape 1 doit être échangée contre un jeton en émet
 
 Exemple de demande :
 
-`
-POST /v1.0/service/security/authenticate HTTP/1.1
-Host: api.tanaguru.com
-User-Agent: My App v1
-Authorization: Basic YjkwMjVjNTZiMjQyNTA1M2RjMDY5NTg1MzkwYWI3Yzg6MTBlZThjZjk2ZjllMzVmNzIwN2E5YTVjYjNmODllZDYzYzVmNTk2OTJlMTc4MmQ4MmM3ZWI3M2QyMTA2NzY5NQ==
-Content-Type: application/json
-Grant_type: client_credentials
-`
+    POST /v1.0/service/security/authenticate HTTP/1.1
+    Host: api.tanaguru.com
+    User-Agent: My App v1
+    Authorization: Basic YjkwMjVjNTZiMjQyNTA1M2RjMDY5NTg1MzkwYWI3Yzg6MTBlZThjZjk2ZjllMzVmNzIwN2E5YTVjYjNmODllZDYzYzVmNTk2OTJlMTc4MmQ4MmM3ZWI3M2QyMTA2NzY5NQ==
+    Content-Type: application/json
+    Grant_type: client_credentials
 
 Si la demande a été correctement formatée, le serveur répond avec un payload JSON codé :
 
@@ -98,10 +96,10 @@ Le jeton est utilisé pour faire des appels vers l’API. Pour utiliser le jeton
 
 Exemple de demande : 
 
-> GET /v1.0/service/limit_stat HTTP/1.1
-> Host: api.tanaguru.com
-> User-Agent: My App v1.0
-> Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2FAAAAAAAAAAAAAAA
+    GET /v1.0/service/limit_stat HTTP/1.1
+    Host: api.tanaguru.com
+    User-Agent: My App v1.0
+    Authorization: Bearer AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA%2FAAAAAAAAAAAAAAA
 
 ## CRÉDITS
 
@@ -131,32 +129,31 @@ Tous les codes >= 400 indiquent que la requête n'a pas été traitée avec succ
 
 ### LANCER UN AUDIT DE PAGE 
 
-`**POST** https://www.api.tanaguru.com/v1.0/service/auditPage`
+    **POST** https://www.api.tanaguru.com/v1.0/service/auditPage
 
 **Format de la requête**
-`
-**Headers** 
-**Authorization:** bearer eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI.oGxndCq3Ocz6CKi2aUb4uA
-**Accept:** application/json; charset=utf-8
-**Content-Type:** application/json
 
-**Payload**
-**{**
-**"page_url": "",**
-**"referentiel ": "",** 
-**"level ": "",** 
-**"language": "",** 
-**"dt_tbl_marker": "" ,**
-**"cplx_tbl_marker": "",**
-**"pr_tbl_marker": "",** 
-**"dcr_img_marker": "",** 
-**"inf_img_marker": "",**
-**"screen_width ": 1920,** 
-**"screen_height": 1080,**
-**"description_ref": true,**
-**"html_tags": false**
-**}**
-`
+    **Headers** 
+    **Authorization:** bearer eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI.oGxndCq3Ocz6CKi2aUb4uA
+    **Accept:** application/json; charset=utf-8
+    **Content-Type:** application/json
+    
+    **Payload**
+    **{**
+    **"page_url": "",**
+    **"referentiel ": "",** 
+    **"level ": "",** 
+    **"language": "",** 
+    **"dt_tbl_marker": "" ,**
+    **"cplx_tbl_marker": "",**
+    **"pr_tbl_marker": "",** 
+    **"dcr_img_marker": "",** 
+    **"inf_img_marker": "",**
+    **"screen_width ": 1920,** 
+    **"screen_height": 1080,**
+    **"description_ref": true,**
+    **"html_tags": false**
+    **}**
 
 **Paramètres**
 
