@@ -33,7 +33,7 @@ Before making REST API calls, you must authenticate using OAuth 2.0. To do this,
 * A client ID and secret code provided by Océane consulting. 
 * Make a POST security / authenticate request to exchange these authentication informations and generate an authentication token through the API. Then for all queries, you must specify in the authentication parameter on the query header the token as the value.
 
-![Shema d'authentification, description ci-dessous](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture06.png)
+![Shema d'authentification, description ci-dessous](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture07.png)
 
 **Step 1 : Autentication**
 
