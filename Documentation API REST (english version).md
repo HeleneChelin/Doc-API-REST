@@ -26,7 +26,7 @@ and your Beta Password is : **10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c
 
 **Note**: For First Beta version of Tanaguru Api, we authorize 5000 requests for free.
 
-**Note**: The authentication informations mentioned is not only for beta version, this is a sample. Contact team Tanaguru to have a valid client ID and PIN (contact@tanaguru.com) 
+**Note**: The authentication informations mentioned is only for beta version, this is a sample. Contact team Tanaguru to have a valid client ID and PIN (contact@tanaguru.com) 
 
 1. Enter the url for authentication: **https://api.tanaguru.com/v1.0/service/security/authenticate** 
 2. Choose the request method POST  

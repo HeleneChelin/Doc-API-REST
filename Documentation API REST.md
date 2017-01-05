@@ -477,9 +477,11 @@ Lancer l’extension une fois installée.
 
 ### DEMANDE DE JETON
 
-En supposant que votre ID client est : **b9025c56b2425053dc069585390ab7c8** et votre code secret est : **10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c7eb73d21067695**. 
+	En supposant que votre ID BETA est : **b9025c56b2425053dc069585390ab7c8** et votre code secret BETA est : **10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c7eb73d21067695**. 
+	
+	**Remarque** : Pour la première version BETA de l'API Tanaguru, nous autorisons 5000 requettes gratuite.
 
-**Remarque** : Les informations d’authentification mentionnée ne sont pas activées, c’est juste un exemple. Rapprochez-vous d’Océane Consulting pour avoir un ID client et un code secret valide. 
+**Remarque** : Les informations d’authentification mentionnée sont seulement pour la version BETA, c’est juste un exemple. Rapprochez-vous dde l'équipe Tanaguru pour avoir un ID client et un code secret valide (contact@tanaguru.com). 
 
 1. Saisissez l’url pour l’authentification : **https://api.tanaguru.com/v1.0/service/security/authenticate** 
 2. Choisissez la méthode de la requête **POST**  
