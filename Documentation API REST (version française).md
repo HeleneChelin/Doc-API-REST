@@ -1,12 +1,12 @@
-# DOCUMENTATION API REST TANAGURU V0.1
+# DOCUMENTATION DE L’API REST TANAGURU V0.1
 
-Quickstart Api Tanaguru
+DOCUMENTATION Api Tanaguru
 
 ## RESUME
 
-Use Api Tanaguru with a chrome extension
+Utiliser l’Api Tanaguru avec une extension Chrome
 
-## Team Tanaguru
+## L'équipe Tanaguru
 
 www.tanaguru.com
 
@@ -294,7 +294,7 @@ themes_description_es		| Objet		| Description des thèmes en espagnole
 criterions_description_en	| Objet		| Description des critères en anglais
 criterions_description_fr	| Objet		| Description des critères en français
 tests_description_en		| Objet		| Description des tests en anglais
-tests_description_fr		| Objet		| Description des tests en anglais
+tests_description_fr		| Objet		| Description des tests en français
 test_na						| Array		| Vecteur contient tous les tests non applicable
 test_passed					| Array		| Vecteur contient tous les tests validés 
 remarks						| Array		| Vecteur contient tous les remarques de l’audit
