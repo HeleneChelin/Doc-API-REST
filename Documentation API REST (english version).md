@@ -39,7 +39,7 @@ Before making REST API calls, you must authenticate using OAuth 2.0. To do this,
 
 1. Make a POST request on security / authenticate using the key and client code to request a token.
 2. The Tanaguru API receives the request and generates a token and returns it to the client in JSON format.
-3. The client recieves the token and parse it to retrieve the token value for use in step
+3. The client receives the token and parse it to retrieve the token value for use in step
 
 **Step 2 : Calls to the API**
 
@@ -57,7 +57,7 @@ This authentication is only reliable when SSL is used. Therefore, all requests t
 
 ### STEP 1 : ENCODING THE CLIENT'S KEY AND SECRET CODE
 
-Steps for encoding client ID and client secret code into a set of identification informations to obtain a token:
+Steps for encoding client ID and client secret code into a set of identification information to obtain a token:
 
 1. Concatenate the Client ID plus the character of two points " :", and the secret code of the client, all in a single chain.
 2. Encoding in Base64 the chain obtained from the previous step.
@@ -100,7 +100,7 @@ Sample of answer:
 
 Requests must verify that the value associated with the token_type key of the returned object is "**bearer**". The value associated with the access_token key is the token.
 
-Note that a token is valid for one application at a time. Redoing another request with the same identification informations will return the same token until it is invalidated. 
+Note that a token is valid for one application at a time. Redoing another request with the same identification information will return the same token until it is invalidated. 
 
 ### STEP 3 : AUTHENTIFY API REQUESTS WITH THE TOKEN
 
@@ -278,8 +278,8 @@ ref							| String	| The repository used for the audit
 level						| String	| The level of accessibility used for auditing
 language					| String	| Message language and audit result remarks
 nb_w3c_invalidated			| Number	| Number of w3c errors
-nb_passed					| Number	| Number of valided tests
-nb_failed					| Number	| Number of invalided tests  
+nb_passed					| Number	| Number of validated tests
+nb_failed					| Number	| Number of invalidated tests  
 nb_not_tested				| Number	| Number of non-tested tests
 nb_na						| Number	| Number of tests not applicable 
 nb_failed_occurences		| Number	| Number of test cases invalidated
@@ -481,7 +481,7 @@ and your Beta Password is : **10ee8cf96f9e35f7207a9a5cb3f89ed63c5f59692e1782d82c
 2. Choose the request method POST  
 3. Go to the tab **Headers form** 
 4. Add the parameter **Authorization** 
-5. Click to the « Edit » icone to set the parameter value **Authorization**
+5. Click to the « Edit » icon to set the parameter value **Authorization**
 6. Enter your **customer ID** at User name, your **secret code** at Password, and click on select button.
 7. Add the **Grant_type** parameter and give it the value **client_credentials** 
 8. Add the **Content-type** parameter and give it the value **application/json**
@@ -506,7 +506,7 @@ After using the token, if you want disable it for any reason,
 2. Make a **POST** request, 
 3. Go to the tab **Headers form** 
 4. Add the parameter **Authorization**, 
-5. Click to the « Edit » icone to set the parameter value **Authorization**
+5. Click to the « Edit » icon to set the parameter value **Authorization**
 6. Enter your **Customer ID** at User name, your **secret code** at Password, and validate.
 7. Add the **Accept parameter** and give it the value **application/json ; charset=utf-8** 
 8. Add the **Content-type** parameter and give it the value **application/json**
@@ -524,7 +524,7 @@ To launch an audit on the site http://www.oceaneconsulting.com with all language
 3. Choose **application/json** as data type to send. 
 4. Go to tab **Headers form** 
 5. Add the parameter **Authorization**
-6. Use the Token type **bearer** with your token as : **bearer eyJH...**
+6. Use the Token type **bearer** with your token as: **bearer eyJH...**
 7. Add the parameter **Accept** and give it the value */*
 8. Add the parameter **Content-type** and give it the value **application/json**
 9. Got to tab **Raw payload**
@@ -545,6 +545,6 @@ To see API usage statistics with your account
 6-	Add the parameter **Accept** and give it the value */*
 7-	Add the parameter **Content-type** and give it the value **application/json**
 8-	Click send to apply.	
-9-	The answer contain the API usage informations.  
+9-	The answer contains the API usage information.  
 
 ![Request screenshot, step above](https://raw.githubusercontent.com/Tanaguru/Doc-API-REST/master/assets/capture05.png)
